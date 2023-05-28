@@ -1,24 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
-function App() {
+import InputField from './components/InputField';
+import QuestList from './components/QuestList';
+import { Quest } from './model'
+
+const App: React.FC = () => {
+  // PROPERTIES
+  const [quest, setQuest] = useState<string>("")
+  const [quests, setQuests] = useState<Quest[]>([])
+
+  // FUNCTIONS
+  const handleQuest = (e: React.FormEvent) => {
+    e.preventDefault()
+
+    if (quest) {
+      setQuests([
+        ...quests,
+        {
+          id: Date.now(),
+          quest: quest,
+          isCompleted: false
+        }
+      ]) //: setQuests
+      setQuest("")
+    } //: if
+    
+  } //: handleQuest
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <span className="heading">Journey of the Day</span>
+      <InputField 
+        quest={quest}
+        setQuest={setQuest}
+        handleQuest={handleQuest}
+      />
+      <QuestList
+        quests={quests}
+        setQuests={setQuests}
+      />
     </div>
   );
 }

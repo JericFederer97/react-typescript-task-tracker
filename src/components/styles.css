@@ -4,10 +4,10 @@
   --primary-color: #091e3a;
   --secondary-color: #134181;
   --quest-color: #f5c952;
-  --quest-list-color: #665b22;
-  --quest-drag-color: #8f7f31;
-  --completed-color: #a27a0d;
-  --completed-drag-color: #daa514;
+  --quest-list-color: #a7761d;
+  --quest-drag-color: #daa514;
+  --completed-color: #88792e;
+  --completed-drag-color: #bca73e;
 }
 
 html {

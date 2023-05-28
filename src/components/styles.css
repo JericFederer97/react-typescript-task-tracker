@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 :root {
   --primary-color: #091e3a;
   --secondary-color: #134181;
+  --quest-list-color: #5e5f2d;
+  --quest-drag-color: #9a9c4a;
+  --completed-color: #633c27;
+  --completed-drag-color: #985e3f;
 }
 
 .input {
   display: flex;
-  width: 90%;
+  width: 95%;
   position: relative;
   align-items: center;
 }
@@ -49,9 +55,101 @@
   box-shadow: 0 0 10px black;
 }
 
+.container {
+  display: flex;
+  width: 95%;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.quests_heading {
+  font-size: 30px;
+  color: antiquewhite;
+}
+
 .quests {
   display: flex;
   justify-content: space-evenly;
-  width: 90%;
-  flex-wrap: wrap;
+  width: 47.5%;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: var(--quest-list-color);
+}
+
+.single_quest {
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary-color);
+  font-family: "Open Sans", serif;
+  /* width: 29.5%; */
+  /* width: 95.5%; */
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 15px;
+  background-image: url("https://img.freepik.com/free-photo/crumpled-yellow-paper-background-close-up_60487-2390.jpg?size=626&ext=jpg");
+  /* background-image: url("https://unsplash.com/photos/E0AHdsENmDg"); */
+  /* background-color: var(--secondary-color); */
+  transition: 0.2s;
+}
+
+.single_quest:hover {
+  box-shadow: 0 0 10px black;
+  transform: scale(1.025);
+}
+
+.single_quest_text {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  font-size: 20px;
+}
+
+.single_quest_text:focus {
+  outline: none;
+}
+
+.completed {
+  background-color: var(--completed-color);
+}
+
+.icon {
+  margin-left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.drag {
+  box-shadow: 0 0 20px black;
+}
+
+.dragactive {
+  background-color: var(--quest-drag-color);
+}
+
+.dragcomplete {
+  background-color: var(--completed-drag-color);
+}
+
+@media (max-width: 1400px) {
+  .quests {
+    width: 45%;
+  }
+}
+
+@media (max-width: 700px) {
+  .input {
+    width: 95%;
+  }
+
+  .quests {
+    width: 95%;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    width: 95%;
+    flex-direction: column;
+  }
 }

@@ -3,10 +3,11 @@
 :root {
   --primary-color: #091e3a;
   --secondary-color: #134181;
-  --quest-list-color: #5e5f2d;
-  --quest-drag-color: #9a9c4a;
-  --completed-color: #633c27;
-  --completed-drag-color: #985e3f;
+  --quest-color: #f5c952;
+  --quest-list-color: #665b22;
+  --quest-drag-color: #8f7f31;
+  --completed-color: #a27a0d;
+  --completed-drag-color: #daa514;
 }
 
 .input {
@@ -80,17 +81,20 @@
 
 .single_quest {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   color: var(--primary-color);
+  font-weight: bolder;
+  overflow: auto;
   font-family: "Open Sans", serif;
   /* width: 29.5%; */
   /* width: 95.5%; */
   border-radius: 5px;
   padding: 20px;
   margin-top: 15px;
-  background-image: url("https://img.freepik.com/free-photo/crumpled-yellow-paper-background-close-up_60487-2390.jpg?size=626&ext=jpg");
+  /* background-image: url("https://img.freepik.com/free-photo/crumpled-yellow-paper-background-close-up_60487-2390.jpg?size=626&ext=jpg"); */
   /* background-image: url("https://unsplash.com/photos/E0AHdsENmDg"); */
-  /* background-color: var(--secondary-color); */
+  background-color: var(--quest-color);
   transition: 0.2s;
 }
 

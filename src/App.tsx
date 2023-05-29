@@ -4,6 +4,8 @@ import './App.css';
 
 import InputField from './components/InputField';
 import QuestList from './components/QuestList';
+import QuoteGenerator from './components/QuoteGenerator';
+import Breathe from './components/Breathe';
 import { Quest } from './model'
 
 const App: React.FC = () => {
@@ -65,6 +67,11 @@ const App: React.FC = () => {
     <DragDropContext onDragEnd={onDragEnd}>
       <div className="App">
         <span className="heading">Journey of the Day</span>
+        <br />
+        <QuoteGenerator />
+        <br />
+        <Breathe />
+        <br />
         <InputField 
           quest={quest}
           setQuest={setQuest}

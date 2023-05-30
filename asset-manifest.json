@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-typescript-task-tracker/static/css/main.a5cab7c3.css",
-    "main.js": "/react-typescript-task-tracker/static/js/main.618af657.js",
+    "main.css": "/react-typescript-task-tracker/static/css/main.d3083a0b.css",
+    "main.js": "/react-typescript-task-tracker/static/js/main.e18ea1ad.js",
     "index.html": "/react-typescript-task-tracker/index.html",
-    "main.a5cab7c3.css.map": "/react-typescript-task-tracker/static/css/main.a5cab7c3.css.map",
-    "main.618af657.js.map": "/react-typescript-task-tracker/static/js/main.618af657.js.map"
+    "main.d3083a0b.css.map": "/react-typescript-task-tracker/static/css/main.d3083a0b.css.map",
+    "main.e18ea1ad.js.map": "/react-typescript-task-tracker/static/js/main.e18ea1ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5cab7c3.css",
-    "static/js/main.618af657.js"
+    "static/css/main.d3083a0b.css",
+    "static/js/main.e18ea1ad.js"
   ]
 }

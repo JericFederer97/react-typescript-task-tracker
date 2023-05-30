@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 
 :root {
   --primary-color: #091e3a;
@@ -15,7 +15,7 @@
   align-items: center;
   color: antiquewhite;
   background-image: linear-gradient(var(--primary-color), var(--tertiary-color));
-  font-family: "Open Sans", serif;
+  font-family: "Gruppo", serif;
 }
 
 .heading {

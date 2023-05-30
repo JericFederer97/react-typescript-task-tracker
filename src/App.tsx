@@ -67,10 +67,9 @@ const App: React.FC = () => {
     <DragDropContext onDragEnd={onDragEnd}>
       <div className="App">
         <span className="heading">Journey of the Day</span>
-        <br />
         <QuoteGenerator />
-        <br />
         <Breathe />
+        <br />
         <br />
         <InputField 
           quest={quest}

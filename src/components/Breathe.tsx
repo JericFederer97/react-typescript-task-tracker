@@ -2,7 +2,9 @@ import React from 'react'
 
 const Breathe = () => {
   return (
-    <div>Breathe web app will be added soon</div>
+    <div>
+      <h2 className='quote-container'>A Breathe Web App that uses music that I composed will be added soon</h2>
+    </div>
   )
 }
 
